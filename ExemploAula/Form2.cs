@@ -16,5 +16,12 @@ namespace ExemploAula
         {
             InitializeComponent();
         }
+
+        private void tsmiLogout_Click(object sender, EventArgs e)
+        {
+            Hide();
+            frmLogin Login = new frmLogin();
+            Login.Show();
+        }
     }
 }

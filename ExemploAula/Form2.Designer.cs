@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             label1 = new Label();
             label2 = new Label();
             menuStrip1 = new MenuStrip();
@@ -36,6 +37,7 @@
             kingLegacyToolStripMenuItem = new ToolStripMenuItem();
             adoptMeToolStripMenuItem = new ToolStripMenuItem();
             brookhavenToolStripMenuItem = new ToolStripMenuItem();
+            tsmiLogout = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -59,7 +61,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { robloxiaToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { robloxiaToolStripMenuItem, tsmiLogout });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -76,31 +78,40 @@
             // bloxFruitsToolStripMenuItem
             // 
             bloxFruitsToolStripMenuItem.Name = "bloxFruitsToolStripMenuItem";
-            bloxFruitsToolStripMenuItem.Size = new Size(180, 22);
+            bloxFruitsToolStripMenuItem.Size = new Size(138, 22);
             bloxFruitsToolStripMenuItem.Text = "Blox Fruits";
             // 
             // kingLegacyToolStripMenuItem
             // 
             kingLegacyToolStripMenuItem.Name = "kingLegacyToolStripMenuItem";
-            kingLegacyToolStripMenuItem.Size = new Size(180, 22);
+            kingLegacyToolStripMenuItem.Size = new Size(138, 22);
             kingLegacyToolStripMenuItem.Text = "King Legacy";
             // 
             // adoptMeToolStripMenuItem
             // 
             adoptMeToolStripMenuItem.Name = "adoptMeToolStripMenuItem";
-            adoptMeToolStripMenuItem.Size = new Size(180, 22);
+            adoptMeToolStripMenuItem.Size = new Size(138, 22);
             adoptMeToolStripMenuItem.Text = "Adopt Me";
             // 
             // brookhavenToolStripMenuItem
             // 
             brookhavenToolStripMenuItem.Name = "brookhavenToolStripMenuItem";
-            brookhavenToolStripMenuItem.Size = new Size(180, 22);
+            brookhavenToolStripMenuItem.Size = new Size(138, 22);
             brookhavenToolStripMenuItem.Text = "Brookhaven";
+            // 
+            // tsmiLogout
+            // 
+            tsmiLogout.Name = "tsmiLogout";
+            tsmiLogout.Size = new Size(62, 20);
+            tsmiLogout.Text = "Log-out";
+            tsmiLogout.Click += tsmiLogout_Click;
             // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -124,5 +135,6 @@
         private ToolStripMenuItem kingLegacyToolStripMenuItem;
         private ToolStripMenuItem adoptMeToolStripMenuItem;
         private ToolStripMenuItem brookhavenToolStripMenuItem;
+        private ToolStripMenuItem tsmiLogout;
     }
 }
