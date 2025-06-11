@@ -113,6 +113,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            ControlBox = false;
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(menuStrip1);

@@ -9,7 +9,7 @@ namespace ExemploAula
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "Admin" && txtSenha.Text == "007")
+            if (txtUsuario.Text == "Admin" && txtSenha.Text == "007")
             {
                 MessageBox.Show("Uusário logado com sucesso");
                 txtUsuario.Clear();
@@ -27,6 +27,11 @@ namespace ExemploAula
                 txtSenha.Clear();
             }
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

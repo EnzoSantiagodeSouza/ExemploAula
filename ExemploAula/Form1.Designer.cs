@@ -34,6 +34,7 @@
             txtUsuario = new TextBox();
             txtSenha = new TextBox();
             btnLogin = new Button();
+            btnSair = new Button();
             SuspendLayout();
             // 
             // lblLogin
@@ -86,7 +87,7 @@
             // btnLogin
             // 
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogin.Location = new Point(346, 384);
+            btnLogin.Location = new Point(280, 378);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(92, 30);
             btnLogin.TabIndex = 5;
@@ -94,11 +95,24 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // btnSair
+            // 
+            btnSair.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSair.Location = new Point(396, 378);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(92, 30);
+            btnSair.TabIndex = 6;
+            btnSair.Text = "Sair";
+            btnSair.UseVisualStyleBackColor = true;
+            btnSair.Click += btnSair_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            ControlBox = false;
+            Controls.Add(btnSair);
             Controls.Add(btnLogin);
             Controls.Add(txtSenha);
             Controls.Add(txtUsuario);
@@ -120,5 +134,6 @@
         private TextBox txtUsuario;
         private TextBox txtSenha;
         private Button btnLogin;
+        private Button btnSair;
     }
 }
