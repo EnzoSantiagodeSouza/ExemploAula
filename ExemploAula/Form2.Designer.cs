@@ -1,6 +1,6 @@
 ﻿namespace ExemploAula
 {
-    partial class Form2
+    partial class frmMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -97,7 +97,7 @@
             brookhavenToolStripMenuItem.Size = new Size(180, 22);
             brookhavenToolStripMenuItem.Text = "Brookhaven";
             // 
-            // Form2
+            // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -106,8 +106,8 @@
             Controls.Add(label1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form2";
-            Text = "Form2";
+            Name = "frmMenu";
+            Text = "Menu";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

@@ -14,6 +14,10 @@ namespace ExemploAula
                 MessageBox.Show("Uusário logado com sucesso");
                 txtUsuario.Clear();
                 txtSenha.Clear();
+
+                Hide();
+                frmMenu frmMenu = new frmMenu();
+                frmMenu.Show();
             }
 
             else
@@ -22,6 +26,7 @@ namespace ExemploAula
                 txtUsuario.Clear();
                 txtSenha.Clear();
             }
+
         }
     }
 }
